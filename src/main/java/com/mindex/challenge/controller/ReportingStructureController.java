@@ -21,7 +21,7 @@ public class ReportingStructureController
     @GetMapping("/reportingStructure/{id}") // REST API for getting Report Structure of specific Employee
     public ReportingStructure read(@PathVariable String id)
     {
-        LOG.debug("Received employee create request for id [{}]", id);
+        LOG.debug("Received employee read request for id [{}]", id);
         return reportingStructureService.read(id);
     }
 

@@ -29,7 +29,7 @@ public class ReportingStructureServiceImpl implements ReportingStructureService
         ReportingStructure reportingStructure = new ReportingStructure();
 
         reportingStructure.setEmployee(employee); // set the filled out employee details into our reporting structure
-        reportingStructure.setNumberOfReports(totalNumOfReports(employee)); //
+        reportingStructure.setNumberOfReports(totalNumOfReports(employee)); // set the total number of employee reports
 
         return reportingStructure;
     }
