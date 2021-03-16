@@ -77,7 +77,8 @@ This new type should have a new REST endpoint created for it. This new endpoint 
 the fully filled out ReportingStructure for the specified employeeId. The values should be computed on the fly and will 
 not be persisted.
 
----> Created REST API to get reporting structure of specific employee with given employeeId and total reporting count (Direct and Indirect) for that employee
+---> Created REST API to get reporting structure of specific employee, with given employeeId and total reporting count (Direct and Indirect) for that employee
+   
     GET request = "/reportingStructure/{id}"
 
 ### Task 2
@@ -86,6 +87,7 @@ two new Compensation REST endpoints. One to create and one to read by employeeId
 Compensation from the persistence layer.
 
 ---> Created a new type called Compensation with two REST endpoints
+    
     1: POST request = "/compensation" 
         to create and save Compensation class data in mongoDB database
     2: GET request = "/compensation/{id}"
